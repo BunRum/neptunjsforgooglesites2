@@ -60,7 +60,7 @@ function fileLoadROM() {
 function downloadFile(fileName, registrationHandler) {
     var ajax = new XMLHttpRequest();
     ajax.onload = registrationHandler;
-    ajax.open("GET", "./" + fileName, true);
+    ajax.open("GET", "https://github.com/BunRum/neptunjsforgooglesites2/raw/main/dbz_supersonic.gba", true);
     ajax.responseType = "arraybuffer";
     ajax.overrideMimeType("text/plain; charset=x-user-defined");
     ajax.send(null);
